@@ -46,6 +46,12 @@ line is completed it is removed, and more space is available in the
 play area. When there is not enough space for blocks to fall, the game
 is over.
 
+%description -l pl.UTF-8
+KBlocks jest klasyczną grą w spadające bloki. Ideą gry jest
+układać spadające bloki tak, aby tworzyły poziome linie bez przerw.
+Kompletne linie są usuwane i robi się więcej miejsca w obszarze gry.
+Gdy nie ma już miejsca na spadające bloki, gra się kończy.
+
 %prep
 %setup -q -n %{kaname}-%{version}
 
