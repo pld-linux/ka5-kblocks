@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	22.04.3
+%define		kdeappsver	22.08.0
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kblocks
 Summary:	Kblocks
 Name:		ka5-%{kaname}
-Version:	22.04.3
+Version:	22.08.0
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	2757aafc1cfacdaeea97c9db82acdfd7
+# Source0-md5:	f5e88359131a9d23263675cdca655185
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	Qt5Gui-devel >= 5.11.1
@@ -95,7 +95,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_iconsdir}/hicolor/48x48/apps/kblocks.png
 %{_iconsdir}/hicolor/64x64/apps/kblocks.png
 %{_datadir}/kblocks
-%{_datadir}/kxmlgui5/kblocks
 %{_datadir}/metainfo/org.kde.kblocks.appdata.xml
 %{_datadir}/qlogging-categories5/kblocks.categories
 %{_datadir}/knsrcfiles/kblocks.knsrc
